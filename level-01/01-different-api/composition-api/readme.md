@@ -5,7 +5,7 @@ Sure! Let's break it down step by step to understand what's happening in this **
 ## **1️⃣ Importing Vue Functions**
 
 ```js
-import { createApp, ref } from 'vue'
+import { createApp, ref } from "vue";
 ```
 
 - `createApp` → Creates a new Vue application instance.
@@ -37,7 +37,7 @@ setup() {
 ## **4️⃣ Defining Reactive Data (`ref`)**
 
 ```js
-const count = ref(0) // Reactive variable
+const count = ref(0); // Reactive variable
 ```
 
 - `ref(0)` creates a **reactive reference** with an initial value of `0`.
@@ -50,7 +50,7 @@ const count = ref(0) // Reactive variable
 
 ```js
 function increment() {
-  count.value++ // Accessing and updating ref value
+  count.value++; // Accessing and updating ref value
 }
 ```
 
@@ -61,7 +61,7 @@ function increment() {
 ## **6️⃣ Returning Data & Methods to Template**
 
 ```js
-return { count, increment }
+return { count, increment };
 ```
 
 - We **return** `count` and `increment` so they can be used in the HTML template.
@@ -71,7 +71,7 @@ return { count, increment }
 ## **7️⃣ Mounting the App**
 
 ```js
-app.mount('#app')
+app.mount("#app");
 ```
 
 - This **attaches** the Vue app to the `<div id="app"></div>` in the HTML.
